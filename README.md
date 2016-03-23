@@ -4,7 +4,8 @@
 ###JSig###
 * populate database with the provided sql data dump
 * setup database connection in *server/config/secrets.ini*
-* setup whitelist in *server/config/config.ini*
+* setup whitelist in *server/config/config.ini* 
+
 ###EVE-Single Sign On###
 * register App at https://developers.eveonline.com/
 * edit the clientID and secret in *server/config/secrets.ini*
