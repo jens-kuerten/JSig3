@@ -1,0 +1,35 @@
+V3.0.5: (2016-03-07)
+-fixed signature window opening unintentionally
+-fixed session sometimes not switching to IGB mode
+-fixed signature sorting
+-fixed incorrect mapsystem positioning when no free position is found
+
+V3.0.4: (2015-10-17)
+-added visual indication if two open tabs are connected
+
+V3.0.3:(2015-10-16)
+-(re)added chain cloning/pushing to other tabs
+
+V3.0.2 beta: (2015-10-11)
+-POI caching (->map loads faster)
+-w-space systems can now be set as point of interest
+-anomalies in signature window can be toggled on and off
+-implemented group system
+-tabs have icons
+-setting a destination to a tradehub now targets the main trade station
+-editing signatures by double clicking them
+-various text fields now submit when pressing enter
+
+-"some" changes to the server code
+
+V3.0.1 beta: (2015-09-11)
+-chains can now be cloned and pushed to other tabs
+-k-space systems are now colored
+
+V3.0 beta: (2015-09-11)
+-added rallypoints
+
+V2 -> V3: (2015-09-02)
+-added tabs
+-added SSO verification
+-JSig should now load faster

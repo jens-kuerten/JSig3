@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSig</title>
+        <SCRIPT type="text/javascript" SRC="js/systemList.js"></SCRIPT>
+        <SCRIPT type="text/javascript" SRC="js/lib.js"></SCRIPT>
+        <SCRIPT type="text/javascript" SRC="js/jmap.js?v={@conf_version}"></SCRIPT>                
+        <LINK rel="stylesheet" type="text/css" href="css/progress.css" />
+        <LINK rel="stylesheet" type="text/css" href="css/map.css" />
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="img/ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="img/ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/ico/manifest.json">
+        <link rel="shortcut icon" href="/img/ico/favicon.ico">
+        <meta name="msapplication-TileColor" content="#3d3232">
+        <meta name="msapplication-TileImage" content="img/ico/mstile-144x144.png">
+        <meta name="msapplication-config" content="img/ico/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
+    <body onload="Init(&quot;{@charactername}&quot;)">
+        
+    <div id="topbar">
+        <div id="logobox">
+            <img src="img/logo.png" height=auto width=120px>
+            <div id="version">V{@conf_version}</div>               
+            <div id="timerbox">
+                <div class="timer" role="progressbar" data-goal="100"></div>
+            </div>
+        </div>                
+        <div id="systembox"></div>
+        <div id="intelboxwrapper">
+            <div id="topintelbox" class="intelbox"></div>
+            <div id="botintelbox" class="intelbox"></div>
+        </div>
+    </div>
+        
+    <div id="mapborder" class="mapborder">
+        <div id="mapheader" class="mapheader"></div>        
+        <div id="maplocation" class="maplocation"></div>
+    </div>
+        
+    <div id="navbottom">
+        <a class="link" onClick="jWindow.showExitWindow()">Exitfinder</a>
+        <a class="link" onClick="jWindow.showPOIWindow()">POI</a>        
+        <a class="link" onClick="jWindow.showAccountWindow()">Account</a> 
+        <a target="blank" href="changelog.txt">Changelog</a>        
+    </div>
+        
+    <div id="errorscreen" class="errorscreen">
+        <div id="errormessage" class="errormessage">            
+        </div>
+    </div>    
+        <div id="taboptions" class="window">
+            <div class="header">
+                <div class="close">X</div>
+                <div class="content"></div>
+            </div>
+            <div class="body"></div>
+        </div>
+        <div class="contextmenu"></div>
+
+ 
+    <div id="mouseover" class="mouseover"></div>
+    <div id="context" class="context"></div>
+    <div id="tabeditwindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('tabeditwindow')">X</div><div class="content"></div></div>
+        <div class="body"></div>
+    </div>
+    <div id="signaturewindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('signaturewindow')">X</div><div class="content"></div></div>
+        <div class="body"></div>
+    </div>
+    <div id="poiwindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('poiwindow')">X</div><div class="content"></div></div>
+        <div class="body"></div>
+    </div>
+    <div id="exitwindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('exitwindow')">X</div><div class="content"></div></div>
+        <div class="body"></div>
+    </div>
+    <div id="adminwindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('adminwindow')">X</div><div class="content">Administration</div></div>
+        <div class="body">loading...</div>
+    </div>    
+    <div id="accountwindow" class="window">
+        <div class="header"><div class="close" onclick="jWindow.close('accountwindow')">X</div><div class="content">Account</div></div>
+        <div class="body">loading...</div>
+    </div>
+    <textarea id="catchpaste"></textarea>
+</body>
