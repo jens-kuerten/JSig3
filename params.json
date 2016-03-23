@@ -1,0 +1,6 @@
+{
+  "name": "Jsig3",
+  "tagline": "Wormhole mapping tool for EVE ONLINE",
+  "body": "# JSig3 #\r\n\r\n##Installation##\r\n###JSig###\r\n* populate database with the provided sql data dump\r\n* setup database connection in *server/config/secrets.ini*\r\n* setup whitelist in *server/config/config.ini*\r\n\r\n###EVE-Single Sign On###\r\n* register App at https://developers.eveonline.com/\r\n* edit the clientID and secret in *server/config/secrets.ini*\r\n* edit the callbackUrl in *server/config/config.ini* (e.g. http://www.team-veldspar.de/jsig3/)\r\n* add the callback url to your App at https://developers.eveonline.com/ (e.g. http://www.team-veldspar.de/jsig3/callback.php)\r\n\r\n###Minimum-requirements###\r\n* php 5.4 \r\n* mysql 5.1 (not tested on lower versions/other databases, but might work)",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
